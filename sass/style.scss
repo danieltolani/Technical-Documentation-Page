@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #0b0c22;
+    color: white;
+    #navbar{
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgb(74, 255, 255);
+        display: block;
+
+        header{
+            text-transform: uppercase;
+            margin: 10px;
+            text-align: center;
+            font-size: 3.2rem;
+        }
+        ul{
+            height: 88%;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: block;
+            padding-inline-end: 0px;
+            line-height: 2.5rem;
+
+            li{
+                border-top: 1px solid;
+                list-style: none;
+                position: relative;
+                width: 100%;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                padding: 40px 30px;
+                font-size: 1.8rem;
+                color: white;
+            }
+        }
+
+    }
+
+    main#main-doc{
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+        top: 0;
+
+        section.main-section{
+            margin: 20px 0px;
+            header{
+                font-size: 3.2rem;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            article{
+                p{    
+                    line-height: 2.5rem;
+                    font-size: 1.8rem;
+                    text-align: justify;
+                }
+                li{
+                    line-height: 2.5rem;
+                    margin-left: 6rem;
+                    text-align: justify;
+                    font-size: 1.8rem;
+                }
+                [href]{
+                    font-size: 1.8rem;
+                    color: #06dee1;
+                    text-decoration: none;
+                 
+                }
+                code{
+                    font-size: 1.8rem;
+                }
+            }
+        }   
+    }
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border: 2px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        #06dee1,
+        #79ff6c
+    );
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 800px){
+    #navbar{
+        position: absolute !important;
+        padding: 0 !important;
+        top: 0;
+        margin: 0 !important;
+        border: none !important;
+        min-width: 100% !important;
+
+        a{
+            text-align: center;
+            padding: 10px 30px !important;
+        }
+    }
+    #main-doc{
+        position: relative;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        margin-top: 370px;
+        padding: 0px !important;
+        border-top: 1.2px solid white;
+
+        section.main-section{
+            margin: 10px 0px !important;
+            header{
+                font-size: 2rem !important;
+            }
+        }
+        p,li,[href],code{
+            font-size: 1.4rem !important;
+            line-height: 2.0rem !important;
+        }
+        li{
+            margin-left: 4rem !important;
+        }
+    }
+}
